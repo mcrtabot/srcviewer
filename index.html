@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+
+  <!-- Google Analytics (GA4) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-7VHJT8BWFK"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'G-7VHJT8BWFK');
+  </script>
+
+  <!-- Open Graph Protocol -->
+  <meta property="og:title" content="Speedrun.com Viewer - The Smarter View of Speedrun.com" />
+  <meta property="og:description"
+    content="Enhanced leaderboard viewer for Speedrun.com with advanced filtering and search capabilities" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://mcrtabot.github.io/srcviewer/" />
+  <meta property="og:image" content="/srcviewer/assets/ogimage-BOXRUOXY.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:site_name" content="Speedrun.com Viewer" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Speedrun.com Viewer - The Smarter View of Speedrun.com" />
+  <meta name="twitter:description"
+    content="Enhanced leaderboard viewer for Speedrun.com with advanced filtering and search capabilities" />
+  <meta name="twitter:image" content="/srcviewer/assets/ogimage-BOXRUOXY.png" />
+
+  <link rel="icon" type="image/png" href="/srcviewer/assets/srcviewer-DroEEYgN.png" />
+  <link rel="apple-touch-icon" href="/srcviewer/assets/srcviewer_icon-Cejd0ZJm.png" />
+  <meta name="theme-color" content="#fffffe" media="(prefers-color-scheme: light)" />
+  <meta name="theme-color" content="#1a1a1a" media="(prefers-color-scheme: dark)" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <link rel=" preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap"
+    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Color+Emoji&display=swap" rel="stylesheet">
+  <title>Speedrun.com Viewer - The Smarter View of Speedrun.com</title>
+  <script type="module" crossorigin src="/srcviewer/assets/index-mUmQ_n1n.js"></script>
+  <link rel="stylesheet" crossorigin href="/srcviewer/assets/index-6kq_KyM1.css">
+</head>
+
+<body>
+  <div id="app"></div>
+
+  <!-- GitHub Pages SPA リダイレクト処理 -->
+  <script type="text/javascript">
+    // GitHub PagesでSPAのルーティングを正しく動作させるためのリダイレクト処理
+    (function (l) {
+      if (l.search[1] === '/') {
+        var decoded = l.search.slice(1).split('&').map(function (s) {
+          return s.replace(/~and~/g, '&')
+        }).join('?');
+        window.history.replaceState(null, null,
+          l.pathname.slice(0, -1) + decoded + l.hash
+        );
+      }
+    }(window.location))
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Speedrun.com Viewer - The Smarter View of Speedrun.com</title>
+    <script type="text/javascript">
+        // GitHub PagesでSPAのルーティングを正しく動作させるためのリダイレクト処理
+        var pathSegmentsToKeep = 1; // /srcviewer/ の部分を保持
+
+        var l = window.location;
+        l.replace(
+            l.protocol + '//' + l.hostname + (l.port ? ':' + l.port : '') +
+            l.pathname.split('/').slice(0, 1 + pathSegmentsToKeep).join('/') + '/?/' +
+            l.pathname.slice(1).split('/').slice(pathSegmentsToKeep).join('/').replace(/&/g, '~and~') +
+            (l.search ? '&' + l.search.slice(1).replace(/&/g, '~and~') : '') +
+            l.hash
+        );
+    </script>
+</head>
+
+<body>
+    <!-- このページは自動的にリダイレクトされます -->
+</body>
+
+</html>
